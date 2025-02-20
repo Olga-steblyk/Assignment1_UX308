@@ -41,6 +41,7 @@ class Chat extends HTMLElement {
   padding-right: 15px;
   padding-left: 15px;button
   border-radius: 1rem;
+  align-item: center;
 }
 
 /* messages */
