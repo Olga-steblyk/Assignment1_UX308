@@ -68,7 +68,7 @@ class Chat extends HTMLElement {
 }
 
 .chat${suffix} .item-primary {
-  background-color:rgb(184, 210, 237);
+  background-color:rgb(237, 184, 217);
   color: #3c3c3e;
   margin-right: 2em;
 }
