@@ -94,45 +94,45 @@ export class Order {
         this.isDone = false;
         
         this.stateCur = this.OrderState.CONFIRMING;
-        if (sInput.toLowerCase().includes(`y`) && this.cuban == true && this.cheese == true){
+        if (sInput.toLowerCase().includes(`yeah!`) ){ //this.cuban == true && this.cheese == true
           //cuban + side
           aReturn.push("Your order has a Cuban sandwich and grilled cheese!");
           aReturn.push("Cost: $3.99 + $10.99 = $14.98");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
         }else if (sInput.toLowerCase().includes(`y`) && this.panini == true && this.cheese == true){
           // panini + side
           aReturn.push("Your order has a Panini sandwich and a grilled cheese");
           aReturn.push("Cost: $3.99 + $11.99 = $15.98");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
         }else if (sInput.toLowerCase().includes(`y`) && this.mystery== true && this.cheese == true){
           // mystery soup + side
           aReturn.push("Your order has a Daily Mystery soup and a grilled cheese");
           aReturn.push("Cost: $3.99 + $8.99 = $12.98");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
         }else if (sInput.toLowerCase().includes(`y`) && this.onion== true && this.cheese == true){
           // onion soup + side
           aReturn.push("Your order has a Onion soup and a grilled cheese");
           aReturn.push("Cost: $3.99 + $9.99 = $13.98");
-          aReturn.push("Please press any button to confirm order");
-        }else if (sInput.toLowerCase().includes(`y`) && this.cuban== true && this.cheese == false){
+          aReturn.push("Please respond with 'confirm' to confirm order");
+        }else if (sInput.toLowerCase().includes(`y`) && this.cuban == true && this.cheese == false){
           aReturn.push("Your order has a Cuban sandwich ");
           aReturn.push("Cost = $10.99");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
         }else if (sInput.toLowerCase().includes(`y`) && this.panini== true && this.cheese == false){
           aReturn.push("Your order has a Panini sandwich");
           aReturn.push("Cost = $12.99");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
         }else if (sInput.toLowerCase().includes(`y`) && this.mystery== true && this.cheese == false){
           aReturn.push("Your order has a Daily mystery soup");
           aReturn.push("Cost = $8.99");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
           // mystery soup; no cheese
         }else if (sInput.toLowerCase().includes(`y`) && this.onion== true && this.cheese == false){
           aReturn.push("Your order has a 🧅Onion soup");
           aReturn.push("Cost = $9.99");
-          aReturn.push("Please press any button to confirm order");
+          aReturn.push("Please respond with 'confirm' to confirm order");
           // onion soup; no cheese
-        }else if (sInput.toLowerCase().includes(`n`)){
+        }else if (sInput.toLowerCase().includes(`no`)){
           aReturn.push("Sorry looks like you do not have anything in your order, please try again");
 
         }else{
@@ -147,7 +147,7 @@ export class Order {
         let aReturn = [];
         this.isDone = true;
         
-        if (sInput()){
+        if (sInput.toLowerCase().includes(`confirm`)){
           aReturn.push("Thank you for ordering, your delivery is on the way to the location linked");
           aReturn.push("Thank you for using Evry-Byte!");
         }
