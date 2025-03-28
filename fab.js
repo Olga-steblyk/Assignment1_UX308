@@ -57,7 +57,7 @@ document.querySelector("body").insertAdjacentHTML("beforeend", `
     
     </style>
     
-    <button id="fab${suffix}" style=color:red;>Order over Here!</button>
+    <button id="fab${suffix} ">Order over Here!</button>
     `);
 
 document.querySelector(`#fab${suffix}`).addEventListener("click", evt=>{
