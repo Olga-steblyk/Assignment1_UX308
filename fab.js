@@ -52,8 +52,9 @@ document.querySelector("body").insertAdjacentHTML("beforeend", `
         position: absolute;
         top: -1em;
         right: 1em;
+        padding: 20px;
         background-color: #e1ad01;
-        padding: 1em;
+        
     }
     
     </style>
