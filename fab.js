@@ -40,6 +40,9 @@ const suffix = (Math.random()*100).toFixed().toString();
 document.querySelector("body").insertAdjacentHTML("beforeend", `
     <style>
     #fab${suffix}{
+    padding: 20px;
+    background-color: #e1ad01;
+    border-style: none;
 
     } 
     
