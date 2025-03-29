@@ -43,6 +43,7 @@ class Chat extends HTMLElement {
   border-radius: 1rem;
   align-item: center;
   border-style: solid;
+  border-radius: 16px;
 }
 
 /* messages */
