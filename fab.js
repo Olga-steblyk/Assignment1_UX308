@@ -39,14 +39,7 @@ const suffix = (Math.random()*100).toFixed().toString();
 
 document.querySelector("body").insertAdjacentHTML("beforeend", `
     <style>
-    #fab${suffix}{
-    padding: 20px;
-    background-color: #e1ad01;
-    border-style: none;
-
-    } 
-    
-    #modal${suffix}{
+    #fab${suffix}, #modal${suffix}{
         position: absolute;
         bottom: 1em;
         right: 1em;
@@ -55,18 +48,12 @@ document.querySelector("body").insertAdjacentHTML("beforeend", `
         position: absolute;
         top: -1em;
         right: 1em;
-        padding: 20px;
-        background-color: #e1ad01;
-        border-style: none;
-        
     }
-    
     </style>
-    
-    <button id="fab${suffix}">Order over Here!</button>
+    <button id="fab${suffix}">Tell me</button>
     `);
 
 document.querySelector(`#fab${suffix}`).addEventListener("click", evt=>{
-    const blur = new Blur(`<div id="modal${suffix}"><div><x-chat /></div><button id="clear${suffix}">Clear</button></div>`);
+    const blur = new Blur(`<div id="modal${suffix}"><div><x-chat /></div><button id="clear${suffix}">clear</button></div>`);
     document.querySelector(`#clear${suffix}`).addEventListener("click", () => blur.close());
 });
